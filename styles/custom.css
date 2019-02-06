@@ -1,0 +1,122 @@
+body {
+    max-width: 600px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.night {
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.nav-a,
+.nav-a:visited {
+    line-height: 20px;
+    color:#9b9b9b;
+}
+
+.nav-a:hover,
+.nav-a:active {
+    color: #0088ee;
+}
+
+.slider {
+    border-radius: 18px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:url(../images/moon.png)  rgba(55, 71, 79, 0.1) no-repeat;
+    background-size: 12px 12px;
+    background-position: 6px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+input:checked + .slider {
+    background:url(../images/sun-white.png)  #5d5f61 no-repeat;
+    background-size: 12px 12px;
+    background-position: 28px 6px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    right: 1px;
+    bottom: 1px;
+    background: url(../images/sun.png) white no-repeat;
+    background-size: 12px 12px;
+    background-position: 6px;
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+input:checked + .slider:before {
+    background: url(../images/moon-white.png) #343739 no-repeat;
+    background-size: 12px 12px;
+    background-position: 5px;
+    -webkit-transform: translateX(-22px);
+    -ms-transform: translateX(-22px);
+    transform: translateX(-22px);
+}
+
+.swiper-button-next {
+    background-image: url(../images/button-next.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    right: 0;
+    margin-top: -20px;
+}
+
+.swiper-button-prev {
+    background-image: url(../images/button-prev.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    left: 0;
+    margin-top: -20px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 56px;
+}
+
+.swiper-pagination-bullet  {
+    background: white;
+    opacity: 0.1;
+}
+
+.swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+}
+
+.nav {
+    display: none;
+}
+
+.nav--openned {
+    display: block;
+}
+
+.main--hidden {
+    display: none;
+}
+
+.cross {
+    display: none;
+}
+
+.cross--displayed {
+    display: block;
+}
+
+.hamburger--hidden {
+    display: none;
+}
