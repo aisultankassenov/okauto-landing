@@ -1,299 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100-l">
   <title> </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/tachyons.css">
   <link rel="stylesheet" href="styles/swiper.min.css">
   <link rel="stylesheet" href="styles/custom.css">
-  <body id="body">
+  <body id="body" class="flex flex-column h-100-l">
         <header class="">
-            <div class="h3-2 w-100 pr1 pt1 pb1 pl2 overflow-hidden">
-                <a href="#" class="dib no-underline h2-2 w2-2 outline-0 fl"><img src="images/logo.png"></a>
-                <div id="menuToggle" onclick="toggleMenu()" class="dib fr pointer" style="background: none;"> 
-                    <div id="hamburger" class="w2-2 h2-2">
-                        <img src="images/hamburger.png"/>
+            <div class="pa3 pl4 pa4-l pl5-l flex justify-between">
+                <a href="#" class="no-underline outline-0 w2 h2 w60 h60"><img src="images/logo.png"></a>
+                <div class="dn db-l h3">
+                    <a href="#" class="f5 greyish-blue no-underline mr5 dib h-100" style="padding: 20px 0;">О проекте</a>
+                    <a href="#" class="f5 greyish-blue no-underline mr5 h-100 dib" style="padding: 20px 0;">Вопросы-ответы</a>
+                    <a href="#" class="f5 greyish-blue no-underline dib h-100" style="padding: 20px 0;">Для бизнеса</a>
+                </div>  
+                <div id="menuToggle" class="pointer w2 h2 w60 h60"> 
+                    <div id="hamburger" class="">
+                        <img src="images/hamburger.png">
                     </div>
-                    <div id="cross" class="w2-2 h2-2 cross">
-                        <img src="images/cross.png"/>
+                    <div id="cross" class="cross">
+                        <img src="images/cross.png">
                     </div>
                 </div>
-            </div>          
-            <nav id="nav" class="nav graphik-r pr1 pl2" style="padding-top:40px;padding-bottom: 31px;">
-                <div style="margin-bottom: 32px;">
-                    <h1 class="ma0 f3 lh-solid" style="letter-spacing:0.6px;">Продукт</h1>
-                    <ul class="list ma0 pa0" style="margin-top: 8px;">
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#section2" class="nav-a f6 no-underline db h-100">Проверка и оплата штрафов онлайн</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#section3" class="nav-a f6 no-underline db h-100">Оплата со скидкой</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#section4" class="nav-a f6 no-underline db h-100">Уведомления</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#section6" class="nav-a f6 no-underline db h-100">Для бизнеса</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#" class="nav-a f6 no-underline db h-100">Скачать для iOS</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#" class="nav-a f6 no-underline db h-100">Скачать для Android</a></li>
+            </div>      
+            <nav id="nav" class="nav graphik-r pa3 pl4 pa5-l pt6-l flex flex-column flex-row-l justify-around-l">
+                <div class="mb4">
+                    <h1 class="ma0 f3 f2-l lh-solid mb2">Продукт</h1>
+                    <ul class="list ma0 pa0">
+                        <li class="pt2 pb2"><a href="#section2" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Проверка и оплата штрафов онлайн</a></li>
+                        <li class="pt2 pb2"><a href="#section3" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Оплата со скидкой</a></li>
+                        <li class="pt2 pb2"><a href="#section4" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Уведомления</a></li>
+                        <li class="pt2 pb2"><a href="#section6" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Для бизнеса</a></li>
+                        <li class="pt2 pb2"><a href="#" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Скачать для iOS</a></li>
+                        <li class="pt2 pb2"><a href="#" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Скачать для Android</a></li>
                     </ul>
                 </div>
-                <div style="margin-bottom: 32px;">
-                    <h1 class="ma0 f3 lh-solid" style="letter-spacing:0.6px;">Помощь</h1>
-                    <ul class="list ma0 pa0" style="margin-top: 8px;">
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#" class="nav-a f6 no-underline db h-100">Вопросы и ответы</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#" class="nav-a f6 no-underline db h-100">Оплата</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#" class="nav-a f6 no-underline db h-100">Страховой полис</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="user_agreement.html" class="f6 no-underline db h-100">Пользовательское соглашения</a></li>
+                <div class="mb4">
+                    <h1 class="ma0 f3 f2-l lh-solid mb2">Помощь</h1>
+                    <ul class="list ma0 pa0">
+                        <li class="pt2 pb2"><a href="#" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Вопросы и ответы</a></li>
+                        <li class="pt2 pb2"><a href="#" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Оплата</a></li>
+                        <li class="pt2 pb2"><a href="#" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Страховой полис</a></li>
+                        <li class="pt2 pb2"><a href="user_agreement.html" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Пользовательское соглашения</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h1 class="ma0 f3 lh-solid" style="letter-spacing:0.6px;">Контакты</h1>
-                    <ul class="list ma0 pa0" style="margin-top: 8px;"> 
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#" class="nav-a f6 no-underline db h-100">О проекте</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#section5" class="nav-a f6 no-underline db h-100">Мы в СМИ</a></li>
-                        <li class="h2-2" style="padding: 10px 0;"><a href="#" class="nav-a f6 no-underline db h-100">help@okauto.kz</a></li>
-                        <li class="h2-2" style="padding: 10px 0;">
-                                <a href="#" class="nav-a f6 no-underline db h-100 overflow-hidden">
-                                <img src="images/whatsapp.png" class="h1-3 w1-3 fl" style="margin-top: -2px;margin-right: 8px;"> Напишите на Whatsapp</a>
+                <div class="mb4">
+                    <h1 class="ma0 f3 f2-l lh-solid mb2">Контакты</h1>
+                    <ul class="list ma0 pa0"> 
+                        <li class="pt2 pb2"><a href="#" class="f6 no-underline db h-100 dark-gray hover-pure-blue">О проекте</a></li>
+                        <li class="pt2 pb2"><a href="#section5" class="f6 no-underline db h-100 dark-gray hover-pure-blue">Мы в СМИ</a></li>
+                        <li class="pt2 pb2"><a href="#" class="f6 no-underline db h-100 dark-gray hover-pure-blue">help@okauto.kz</a></li>
+                        <li class="pt2 pb2">
+                            <a href="#" class="f6 no-underline db h-100 greyish-blue dim overflow-hidden">
+                                <img src="images/whatsapp.png" class="fl h2 w2">
+                                <span class="dib fl h2 pa2 border-box"> Напишите на Whatsapp</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main id="main" class="graphik-r"> 
-            <section id="section1" class="pt4 pl2 pr1 relative" style="padding-bottom: 225px;">
-                <h1 class="graphik-s f3 lh-medium tracked-tight ma0" style="margin-bottom: 28px;line-height: 29px;margin-top: -2px;">
-                        Проверка <br/>
-                        и оплата штрафов 
-                </h1>
-                <ul class="list ma0 pa0" style="margin-top: -2px;">
-                    <li class="graphik-s lh-copy black-70 o-80 tracked-tight overflow-hidden mb1">
-                        <img src="images/list-item.png" class="w1-2 h1-2 fl" style="margin-top: 2px;margin-left: 1px;margin-right: 15px;"/> 
-                        <span class="fl">Фото и место нарушения</span>
-                    </li>
-                    <li class="graphik-s lh-copy black-70 o-80 tracked-tight overflow-hidden mb1">
-                        <img src="images/list-item.png" class="w1-2 h1-2 fl" style="margin-top: 2px;margin-left: 1px;margin-right: 15px;"/>
-                        <span class="fl">Оплата со скидкой 50%</span>
-                    </li>
-                    <li class="graphik-s lh-copy black-70 o-80 tracked-tight overflow-hidden">
-                        <img src="images/list-item.png" class="w1-2 h1-2 fl" style="margin-top: 2px;margin-left: 1px;margin-right: 15px;"/>
-                        <span class="fl">Уведомления о штрафах</span>
-                    </li>
-                </ul>
-                <div class="" style="margin-top: 100px;">
-                    <a href="#" class="dib w4 h2-2 ba br4 b--black-40 no-underline black overflow-hidden" style="padding: 8px 0 0 7px; margin-right: 12px;"> 
-                        <img src="images/appstore.png" class="w1-3 h1-3 dib fl" style="margin-right: 4px;"/>
-                        <span class="f8 lh-solid dib fl" style="margin: -1px 0 2px;">Скачать из </span>
-                        <span class="graphik-s f6 lh-solid dib fl">App Store</span>
-                    </a>
-                    <a href="#" class="dib w4 h2-2 ba br4 b--black-40 no-underline black overflow-hidden" style="padding: 8px 0 0 7px">
-                        <img src="images/google_play.png" class="w1-3 h1-3 dib fl" style="margin-right: 4px;"/>
-                        <span class="f8 lh-solid dib fl" style="margin: -1px 0 2px;">Доступно в </span>
-                        <span class="graphik-s f6 lh-solid dib fl">Google play</span>
-                    </a>
-                </div>
-                <img src="images/bg-ios_android.png" class="absolute bottom-0 right-0 w-100" style="max-width: 375px;"/>
-            </section>
-            <section id="section2" class="" style="padding-top: 97px;">
-                <h1 class="graphik-s f3 lh-title ma0 mb1 pl2 pr2" style="line-height: 29px;margin-bottom: 21px;">Проверка и оплата штрафов ПДД</h1>
-                <a href="#" class="dib no-underline outline-0 cyan-blue mb1 pl2 pr2" style="color:#2c99ed; margin-bottom: 10px;">
-                    <span class="db overflow-hidden" style="padding-top: 2px;">
-                        <img src="images/play.png" class="w1-3 h1-3 dib fl mr1" style="margin-top: -2px;"/> 
-                        Как проверить и оплатить штраф? 
-                    </span>
-                </a>
-                <p class="ma0 f6 tracked-tight pl2 pr2" style="line-height: 24px">OKauto - это мобильное приложение, с помощью которого водители могут выполнить проверку и оплату штрафов ПДД. Информацию о штрафах мы получаем из официального источника - ЕРАП</p>
-                <img src="images/mobile_app-1.png" class="center db" style="margin-top: 57px; margin-bottom: 36px;max-width: 375px;"/>
-                <div class="pl2 pr2">
-                    <img src="images/list-item-2.png" class="w2-2 h2-2 dib" style="margin-bottom:8px;"/>
-                    <h2 class="f4-2 lh-copy ma0" style="margin-bottom:6px; letter-spacing: 0.3px;">Лёгкая оплата штрафов </h2>
-                    <p class="ma0 f6 lh-copy" style="color: #9b9b9b; line-height: 20px; margin-bottom: 33px;">Лёгкая оплата штрафов <br/> 
-                            Мы интегрированы с Платежным шлюзом электронного правительства РК (ПШЭП) и гарантируем поступление денег в Комитет Казначейство МФ РК.  </p>
-                </div>
-                <div class="pl2 pr2">
-                    <img src="images/card.png" class="w2-2 h2-2 dib" style="margin-bottom: 11px;"/>
-                    <h2 class="f4-2 lh-copy ma0" style="margin-bottom:3px;letter-spacing: 0.3px;">Безопасность</h2>
-                    <p class="ma0 f6 lh-copy" style="color: #9b9b9b; line-height: 20px; margin-bottom: 35px;">Оплата принимается с банковских карт платежных систем Mastercard и Visa. Мы не храним и не обрабатываем информацию о Ваших картах.</p>
-                </div>
-                <div class="pl2 pr2">
-                    <img src="images/safety.png" class="w2-2 h2-2 dib" style="margin-bottom:8px;" />
-                    <h2 class="f4-2 lh-copy ma0" style="margin-bottom:6px; letter-spacing: 0.3px;">Квитанция об оплате</h2>
-                    <p class="ma0 f6 lh-copy" style="color: #9b9b9b; line-height: 20px; margin-bottom: 35px;">После оплаты Вы автоматически получаете квитанцию. Она служит подтверждением платежа, и при необходимости Вы можете распечатать и предъявить как банковский документ.</p>
-                </div>
-                <div class="pl2 pr2">
-                    <img src="images/card.png" class="w2-2 h2-2 dib" style="margin-bottom: 12px;" />
-                    <h2 class="f4 lh-title ma0" style="margin-bottom:2px; letter-spacing: 0.3px">Последствия несвоевременной оплаты штрафов</h2>
-                    <p class="f5 lh-copy ma0" style="color: #9b9b9b;">
-                            После оплаты Вы автоматически получаете квитанцию. Она служит подтверждением платежа, и при необходимости Вы можете распечатать и предъявить как банковский документ. 
-                            <br/><br/>
-                            Проверка для нескольких автомобилей. Простая проверка поможет сохранить данные, получить квитанции об оплате 
-                            и в любой момент проверить штрафы ПДД.                            
-                    </p>
-                    <ul class="list f5 lh-copy ma0 pa0" style="color: #9b9b9b; margin-top: 13px;"> 
-                        <li class="flex" style="margin-bottom: 14px;">
-                            <img src="images/info.png" class="dib mr1 w1-3 h1-3"/> 
-                            <span style="margin-top: -4px;">Наложение штрафа в двукратном размере (через 7 дней со дня вступления постановления в законную силу).</span>
+        <main id="main" class="flex-auto-l overflow-auto swiper-container"> 
+            <div class="content flex flex-column swiper-wrapper">
+                <section id="section1" class="pa3 pl4 pb7 pa6-l pl7-l mb6 ma0-l swiper-slide overflow-hidden">
+                    <h1 class="graphik-s f3 f1-l lh-title tracked-tight ma0 mb4 w-70 w-50-l">
+                            Проверка 
+                            и оплата штрафов 
+                    </h1> 
+                    <ul class="list ma0 pa0 mb5 mb6-l graphik-s lh-copy black-70 tracked-tight">
+                        <li class="o-80 overflow-hidden h2 mb2">
+                            <img src="images/list-item.png" class="fl h1 w1 pa1 pr2"/> 
+                            <span class="fl">Фото и место нарушения</span>
                         </li>
-                        <li class="flex" style="margin-bottom: 14px;">
-                            <img src="images/info.png" class="dib mr1 w1-3 h1-3"/> 
-                            <span style="margin-top: -4px;">Запрет на выезд из страны (если сумма неуплаченных по судебному решению административных протоколов более 1 200 120 тг.).</span>
+                        <li class="o-80 overflow-hidden h2 mb2">
+                            <img src="images/list-item.png" class="fl h1 w1 pa1 pr2"/>
+                            <span class="fl">Оплата со скидкой 50%</span>
                         </li>
-                        <li class="flex">
-                            <img src="images/info.png" class="dib mr1 w1-3 h1-3"/> 
-                            <span style="margin-top: -4px;">Общественные работы до 50 часов, либо административный арест до 15 суток.</span>
+                        <li class="o-80 overflow-hidden h2">
+                            <img src="images/list-item.png" class="fl h1 w1 pa1 pr2"/>
+                            <span class="fl">Уведомления о штрафах</span>
                         </li>
                     </ul>
-                </div>
-            </section>
-            <section id="section3" class="" style="padding-top: 97px;">
-                <h1 class="graphik-s f3 lh-title ma0 pl2 pr2" style="margin-bottom: 21px;">Оплата со скидкой 50%</h1>
-                <a href="#" class="dib no-underline outline-0 cyan-blue pl2 pr2" style="line-height: 20px; color:#2c99ed; margin-bottom: 10px;">
-                    <span class="db overflow-hidden" style="margin-top: 2px"><img src="images/play.png" class="w1-3 h1-3 dib fl mr1" /> Как оплатить штраф со скидкой? </span>
-                </a>
-                <p class="ma0 f6 tracked-tight pl2 pr2" style="line-height: 24px">Согласно статье 811 КоАП, 50-процентную скидку можно получить при уплате штрафа  в течение 7 дней с даты вынесения постановления</p>
-                <img src="images/mobile_app-2.png" class="center db" style="margin-top: 25px; margin-bottom: 36px;max-width: 375px;"/>
-                <div class="pl2 pr2" style="margin-bottom:21px;">
-                    <h2 class="f4-2 lh-copy ma0 overflow-hidden" style="margin-bottom: 8px;line-height: 24px;margin-top: -3px;letter-spacing: 0.3px;">
-                        <img src="images/discount.png" class="w2-2 h2-2 dib fl mr1"  style="margin-top:3px"/>
-                        Как выглядит штраф <br/> со скидкой?
-                    </h2>
-                    <p class="f6 lh-copy ma0" style="color: #9b9b9b; padding-left: 56px;">В списке неоплаченных штрафов, штрафы, на которые действует скидка, выделены значком 50% </p>
-                </div>
-                <div class="pl2 pr2">
-                    <h2 class="f4-2 lh-copy ma0 overflow-hidden" style="letter-spacing: 0.3px;">
-                        <img src="images/calendar.png" class="w2-2 h2-2 dib fl mr1"/>
-                        Сколько действует скидка?
-                    </h2>
-                    <p class="f6 lh-copy ma0" style="color: #9b9b9b; padding-left: 56px; margin-top: -10px;line-height: 20px;">Скидка действует 7 дней (включительно) с даты вынесения постановления. Также следует учесть, что при исчислении 7-ми суток не учитываются праздничные и выходные дни.</p>
-                </div>
-            </section>
-            <section id="section4" class="" style="padding-top: 97px;padding-bottom: 86px;">
-                <h1 class="graphik-s f3 lh-title ma0 mb1 pl2 pr2">Уведомления о новых штрафах </h1>
-                <a href="#" class="dib no-underline outline-0 cyan-blue pl2 pr2" style="line-height: 20px; color:#2c99ed;margin-bottom:9px;">
-                    <span class="db overflow-hidden" style="margin-top:4px"><img src="images/play.png" class="w1-3 h1-3 dib fl mr1" />Как включить уведомления</span>
-                </a>
-                <p class="ma0 f6 tracked-tight pl2 pr2" style="line-height: 24px">Некоторые водители могут не знать о существовании штрафа, также нет необходимости мониторить приложение каждый час. При помощи мобильного приложения OKauto Вы своевременно будете получать информацию о новых штрафах и успевать погашать их со скидкой. </p>
-                <img src="images/mobile_app-3.png" class="center db" style="margin-top: 40px; margin-bottom: 36px;max-width: 375px;"/>
-                <div class="pl2 pr2" style="margin-bottom: 29px;">
-                    <img src="images/push_nots.png" class="w2-2 h2-2 dib" style="margin-bottom: 12px;" />
-                    <h2 class="f4-2 lh-copy ma0" style="margin-bottom:5px;line-height: 24px;letter-spacing: 0.3px;">Push-уведомления </h2>
-                    <p class="f6 ma0 lh-copy" style="color: #9b9b9b;">Вы можете совершенно бесплатно и прямо в мобильном приложении получать сообщения о новых штрафах </p>
-                </div>
-                <div class="pl2 pr2">
-                    <img src="images/sms.png" class="w2-2 h2-2 dib" style="margin-bottom: 12px;"/>
-                    <h2 class="f4-2 lh-copy ma0" style="margin-bottom:5px;line-height: 24px;letter-spacing: 0.3px;">SMS-уведомления </h2>
-                    <p class="f6 ma0 lh-copy" style="color: #9b9b9b;">Если у Вас нет интернет соединения, то информация о штрафах будет приходить в виде SMS </p>
-                </div>
-            </section>
-            <section id="section5" class="swiper-container">
-                <!--slider-->
-                <div style="height: 675px;" class="swiper-wrapper white">
-                    <div class="tc swiper-slide" style="height: 100%;background: url(images/bg_slider-1.png) center no-repeat;background-size: cover;padding-top: 125px;">
-                        <p class="f5 ma0" style="letter-spacing:2px;margin-bottom:41px;">СМИ о нас </p>
-                        <img class="h1" src="images/vcru.png"/ style="width:69px">
-                        <p class="f4 ma0 pl4 pr4" style="line-height:28px;margin-top: 77px;letter-spacing: 0.3px;margin-bottom: 48px">«Публичный питч: OKauto — казахстанское мобильное приложение для проверки 
-                                <br/> и оплаты штрафов ГИБДД»</p>
-                        <a href="#" class="f6 lh-solid no-underline" style="color:#ffe200;border-bottom: 1px solid #ffe200;padding-bottom: 4px;">Читать далее</a>
+                    <div class="mb4">
+                        <a href="#" class="dib w4 h40 ba br4 br3-l b--black-40 no-underline black overflow-hidden pt2 pl2 mr2 mr3-l"> 
+                            <img src="images/appstore.png" class="w24 h24 dib fl mr1"/>
+                            <span class="f8px lh-solid dib fl">Скачать из </span>
+                            <span class="graphik-s f6 lh-solid dib fl">App Store</span>
+                        </a>
+                        <a href="#" class="dib w4 h40 ba br4 br3-l b--black-40 no-underline black overflow-hidden pt2 pl2">
+                            <img src="images/google_play.png" class="w24 h24 dib fl mr1"/>
+                            <span class="f8px lh-solid dib fl">Доступно в </span>
+                            <span class="graphik-s f6 lh-solid dib fl">Google play</span>
+                        </a>
                     </div>
-                    <div class="tc swiper-slide" style="height: 100%;background: url(images/bg_slider-2.png) center no-repeat;background-size: cover;padding-top: 128px;">
-                        <p class="f5 ma0" style="letter-spacing:2px;margin-bottom:41px;">СМИ о нас </p>
-                        <img class="h1" src="images/capital.png"/>
-                        <p class="f4 ma0" style="line-height:28px;margin-top: 90px;letter-spacing: 0.3px;margin-bottom: 59px">«Почему предприниматели 
-                                <br/> в Казахстане должны быть «стенобоями»»</p>
-                        <a href="#" class="f6 lh-solid no-underline" style="color:#ffe200;border-bottom: 1px solid #ffe200;padding-bottom: 4px;">Читать далее</a>
-                    </div>
-                    <div class="tc swiper-slide" style="height: 100%;background: url(images/bg_slider-3.png) center no-repeat;background-size: cover;padding-top: 128px;">
-                        <p class="f5 ma0" style="letter-spacing:2px;margin-bottom:41px;">СМИ о нас </p>
-                        <img class="h1" src="images/forbes.png"/>
-                        <p class="f4 ma0 pl4 pr4" style="line-height:28px;margin-top: 46px;letter-spacing: 0.3px;margin-bottom: 19px">«Топ-30 мобильных приложений Казахстана. Подведены итоги четвертого ежегодного рейтинга мобильных приложений по версии Forbes Kazakhstan»</p>
-                        <a href="#" class="f6 lh-solid no-underline" style="color:#ffe200;border-bottom: 1px solid #ffe200;padding-bottom: 4px;">Читать далее</a>
-                    </div>
-                    <div class="tc swiper-slide" style="height: 100%;background: url(images/bg_slider-4.png) center no-repeat;background-size: cover;padding-top: 125px;">
-                        <p class="f5 ma0" style="letter-spacing:2px;margin-bottom:41px;">СМИ о нас </p>
-                        <img class="h1" src="images/forklog.png"/>
-                        <p class="f4 ma0 pl4 pr4" style="line-height:28px;margin-top: 88px;letter-spacing: 0.3px;margin-bottom: 61px">«Автомобилисты Казахстана могут оплатить штрафы в биткоинах»</p>
-                        <a href="#" class="f6 lh-solid no-underline" style="color:#ffe200;border-bottom: 1px solid #ffe200;padding-bottom: 4px;">Читать далее</a>
-                    </div>
-                    <div class="tc swiper-slide" style="height: 100%;background: url(images/bg_slider-5.png) center no-repeat;background-size: cover;padding-top: 127px;">
-                        <p class="f5 ma0" style="letter-spacing:2px;margin-bottom:41px;">СМИ о нас </p>
-                        <img class="h1" src="images/steppe.png"/>
-                        <p class="f4 ma0 pl4 pr4" style="line-height:28px;margin-top: 32px;letter-spacing: 0.3px;margin-bottom: 43px">«Как мобильное приложение для водителей «OKauto» набрало 270 тыс. пользователей 
-                                <br/> и вошло в топ-20 самых популярных 
-                                <br/> в App Store»</p>
-                        <a href="#" class="f6 lh-solid no-underline" style="color:#ffe200;border-bottom: 1px solid #ffe200;padding-bottom: 4px;">Читать далее</a>
-                    </div>
-                </div>
-                <!-- pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </section>
-            <section id="section6" class="relative pl2 pr1 overflow-hidden" style="padding-top: 97px;    padding-bottom: 56px;">
-                <div class="absolute br-100" style="background: #ffe200;width: 386px;height: 386px; top: -110px;left: -98px; z-index:-1;"></div>
-                <h1 class="graphik-s f3 lh-title ma0" style="margin-bottom: 13px;">Проверка и оплата штрафов для бизнеса</h1>
-                <p class="ma0 f6 tracked-tight mb2" style="line-height: 24px;margin-bottom: 21px;">Мы предоставляем услуги по массовой <br/> проверке штрафов ПДД для юридических лиц</p>
-                <ul class="list ma0 pa0 f6" style="margin-bottom: 29px;">
-                    <li class="overflow-hidden mb1">
-                        <img src="images/taxi_roof_sign.png" class="w1-3 h1-3 fl" style="margin-right: 8px" />
-                        <span class="dib fl" style="margin-top: 4px;">Таксопаркам</span>
-                    </li>
-                    <li class="overflow-hidden mb1">
-                        <img src="images/key_exchange.png" class="w1-3 h1-3 fl" style="margin-right: 8px"/>
-                        <span class="dib fl" style="margin-top: 4px;">Лизинговым компаниям </span>
-                    </li>
-                    <li class="overflow-hidden mb1">
-                        <img src="images/carpool.png" class="w1-3 h1-3 fl" style="margin-right: 8px"/>
-                        <span class="dib fl" style="margin-top: 4px;">Компаниям проката автомобилей </span>
-                    </li>
-                    <li class="overflow-hidden">
-                        <img src="images/company.png" class="w1-3 h1-3 fl" style="margin-right: 8px"/>
-                        <span class="dib fl" style="margin-top: 4px;">Другим организациям</span>
-                    </li>
-                </ul>
-                <h2 class="f4-2 ma0" style="line-height: 24px;letter-spacing: 0.3px;margin-bottom: 8px;">Экономия времени</h3>
-                <p class="f6 ma0 lh-copy" style="color: #9b9b9b;">Вашему сотруднику не нужно тратить время на проверку штрафов </p>
-                <p class="f3 lh-title ma0 tc" style="margin-top: 58px;margin-left: -9px; line-height: 29px;">С OKauto все легко <br/> и просто </p>
-                <div class="tc" style="margin-top: 21px;margin-left: -10px;">
-                    <a href="#" class="dib w4 h2-2 ba br4 b--black-40 no-underline black overflow-hidden" style="padding: 8px 0 0 7px; margin-right: 12px;"> 
-                        <img src="images/appstore.png" class="w1-3 h1-3 dib fl" style="margin-right: 4px;"/>
-                        <span class="f8 lh-solid dib fl" style="margin: -1px 0 2px;">Скачать из </span>
-                        <span class="graphik-s f6 lh-solid dib fl">App Store</span>
+                    <img src="images/bg-ios_android.png" class="w-100 absolute bottom-0 right-0 dn-l" style="max-width: 700px"/>
+                    <img src="images/bg-ios_android-full.png" class="w-100 absolute bottom--10 right--10 dn db-l" style="max-width: 955px;">
+                </section>
+                <section id="section2" class="swiper-slide flex-l flex-column-l items-end-l pa6-l overflow-scroll-l">
+                    <h1 class="graphik-s f3 f2-l tracked-tight ma0 mb4 ml4 w-70 w-50-l ml0-l">Проверка и оплата штрафов ПДД</h1>
+                    <a href="#" class="dib no-underline outline-0 sky-blue ml4 mb4 w-50-l ml0-l">
+                        <span class="db overflow-hidden">
+                            <img src="images/play.png" class="w24 h24 dib fl mr1"/> 
+                            Как проверить и оплатить штраф? 
+                        </span>
                     </a>
-                    <a href="#" class="dib w4 h2-2 ba br4 b--black-40 no-underline black overflow-hidden" style="padding: 8px 0 0 7px">
-                        <img src="images/google_play.png" class="w1-3 h1-3 dib fl" style="margin-right: 4px;"/>
-                        <span class="f8 lh-solid dib fl" style="margin: -1px 0 2px;">Доступно в </span>
-                        <span class="graphik-s f6 lh-solid dib fl">Google play</span>
+                    <p class="ma0 ml4 f6 tracked-tight w-80 mb5 w-50-l ml0-l f5-l">OKauto - это мобильное приложение, с помощью которого водители могут выполнить проверку и оплату штрафов ПДД. Информацию о штрафах мы получаем из официального источника - ЕРАП</p>
+                    <div class="center relative mb5 order-last-l self-start-l w-40-l ma0-l fixed-l">
+                        <div class="b-sea-green br-100 absolute top-0 center dn-m dn-l" style="width: 320px;height:320px;left: 50%; margin-left:-160px;top: 10%;z-index: -1;"></div>
+                        <img src="images/bg-mobile_app-1.png" class="center db w269 w380">
+                    </div>
+                    <div class="pl4 w-90 w-50-l pl0-l">
+                        <img src="images/list-item-2.png" class="w40 h40 mb2 w60 h60"/>
+                        <h2 class="f4 ma0 mb2">Лёгкая оплата штрафов </h2>
+                        <p class="ma0 f6 mb5">
+                                Мы интегрированы с Платежным шлюзом электронного правительства РК (ПШЭП) и гарантируем поступление денег в Комитет Казначейство МФ РК.  </p>
+                    </div>
+                    <div class="pl4 w-90 w-50-l pl0-l">
+                        <img src="images/card.png" class="w40 h40 mb2 w60 h60"/>
+                        <h2 class="f4 ma0 mb2">Безопасность</h2>
+                        <p class="ma0 f6 mb5">Оплата принимается с банковских карт платежных систем Mastercard и Visa. Мы не храним и не обрабатываем информацию о Ваших картах.</p>
+                    </div>
+                    <div class="pl4 w-90 w-50-l pl0-l">
+                        <img src="images/safety.png" class="w40 h40 mb2 w60 h60"/>
+                        <h2 class="f4 ma0 mb2">Квитанция об оплате</h2>
+                        <p class="ma0 f6 mb5">После оплаты Вы автоматически получаете квитанцию. Она служит подтверждением платежа, и при необходимости Вы можете распечатать и предъявить как банковский документ.</p>
+                    </div>
+                    <div class="pl4 w-90 w-50-l pl0-l">
+                        <img src="images/info-yellow.png" class="w40 h40 mb2 w60 h60" />
+                        <h2 class="f4 ma0 mb2">Последствия несвоевременной оплаты штрафов</h2>
+                        <p class="f6 ma0 mb4">
+                            Регулярная проверка штрафов помогает вам избежать административной ответственности. Если оплата штрафа ГИБДД не выполнена вовремя, водителя ожидает:                            
+                        </p>
+                        <ul class="list ma0 pa0 f6 mb6"> 
+                            <li class="flex mb3">
+                                <img src="images/info.png" class="dib w24 h24 mr2"/> 
+                                <span>Наложение штрафа в двукратном размере (через 7 дней со дня вступления постановления в законную силу).</span>
+                            </li>
+                            <li class="flex mb3">
+                                <img src="images/info.png" class="dib w24 h24 mr2"/> 
+                                <span>Запрет на выезд из страны (если сумма неуплаченных по судебному решению административных протоколов более 1 200 120 тг.).</span>
+                            </li>
+                            <li class="flex">
+                                <img src="images/info.png" class="dib w24 h24 mr2"/> 
+                                <span>Общественные работы до 50 часов, либо административный арест до 15 суток.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="section3" class="mb6 ma0-l swiper-slide flex-l flex-column-l items-start-l pa6-l pl7-l overflow-scroll-l">
+                    <h1 class="graphik-s f3 f2-l tracked-tight ma0 mb4 ml4 w-70 w-50-l ml0-l">Оплата со скидкой 50%</h1>
+                    <a href="#" class="dib no-underline outline-0 sky-blue ml4 mb4 w-50-l ml0-l">
+                        <span class="db overflow-hidden">
+                            <img src="images/play.png" class="w24 h24 dib fl mr1"/> 
+                            Как оплатить штраф со скидкой?
+                        </span>
                     </a>
-                </div>
-            </section>
-            <section id="section7" class="white" style="background: url(images/bg-partner.png) center no-repeat; height: 438px; background-size: cover; 
-                                        padding: 60px 25px 0;">
-                <img src="images/logo-partner.png" class="db h2-2" style="margin: 0 auto 148px; width: 165px;" />
-                <h1 class="ma0 tc f3" style="line-height: 48px">Наш партнер </h1>
-                <p class="ma0 tc f6" style="line-height: 20px;">Anytime оказывает услуги каршеринга. Каршеринг - это краткосрочная аренда авто. Вы можете приобрести в пользование автомобиль и платить по строго обозначенному тарифу.</p>
-            </section>
-        </main>
-        <footer class="pt4 pl2 pr2 graphik-r">
-            <div class="" style="margin-bottom: 18px;">
-                <a href="#" class="dib no-underline outline-0 overflow-hidden" style="color: #37474F;margin-right: 12px;">
-                    <img src="images/appstore-grey.png" class="dib fl w1 h1" style="margin-right: 4px"/>
-                    <span class="dib fl" style="font-size:12px; line-height: 1.5">Для iOS</span>
-                </a>
-                <a href="#" class="dib no-underline outline-0 overflow-hidden" style="color: #37474F;">
-                    <img src="images/google_play-grey.png" class="dib fl w1 h1" style="margin-right: 4px" />
-                    <span class="dib fl" style="font-size:12px;line-height: 1.5">Для Android</span>
-                </a>
-                <div class="dib fr" style="margin-top:-4px">
-                    <label class="" style="width: 46px;height: 24px;display: block;position: relative;">
-                        <input id="toggleSiteMode"  type="checkbox" style="opacity: 0;width: 0;height: 0;">
-                        <span class="slider"></span>
-                    </label>
-                </div>
+                    <p class="ma0 ml4 f6 tracked-tight w-80 mb5 w-50-l ml0-l mb4-l f5-l">Согласно статье 811 КоАП, 50-процентную скидку можно получить при уплате штрафа  в течение 7 дней с даты вынесения постановления</p>
+                    <div class="center relative mb5 order-last-l self-end-l w-40-l ma0-l fixed-l">
+                            <div class="b-orange-red br-100 absolute top-0 center dn-m dn-l" style="width: 320px;height:320px;left: 50%; margin-left:-160px;top: 10%;z-index: -1;"></div>
+                            <img src="images/bg-mobile_app-2.png" class="center db w269 w380">
+                        </div>
+                    <div class="pl4 mb3 w-50-l pl0-l mb4-l">
+                        <h2 class="f4 ma0 mb2 relative pl5 pl5rem w-90">
+                            <img src="images/discount.png" class="absolute w40 h40 w60 h60 left-0 top-0"/>
+                            Как выглядит штраф со скидкой?
+                        </h2>
+                        <p class="f6 dark-gray ma0 pl5 pl5rem w-90">В списке неоплаченных штрафов, штрафы, на которые действует скидка, выделены значком 50% </p>
+                    </div>
+                    <div class="pl4 mb3 w-50-l pl0-l mb4-l">
+                        <h2 class="f4 ma0 mb2 relative pl5 pl5rem w-90">
+                            <img src="images/calendar.png" class="absolute w40 h40 w60 h60 left-0 top-0"/>
+                            Сколько действует скидка?
+                        </h2>
+                        <p class="f6 dark-gray ma0 pl5 pl5rem w-90">Скидка действует 7 дней (включительно) с даты вынесения постановления. Также следует учесть, что при исчислении 7-ми суток не учитываются праздничные и выходные дни.</p>
+                    </div>
+                    <div class="pl4 mb3 w-50-l pl0-l mb4-l">
+                        <h2 class="f4 ma0 mb2 relative pl5 pl5rem w-90">
+                            <img src="images/calendar.png" class="absolute w40 h40 w60 h60 left-0 top-0"/>
+                            Скидка в 50% на штрафы с камер
+                        </h2>
+                        <p class="f6 dark-gray ma0 pl5 pl5rem w-90">28 декабря 2017 года президент РК Нурсултан Назарбаев подписал закон “О Внесении изменений и дополнений в Кодекс Республики Казахстан об административных правонарушениях”. С 9 января 2018 года можно получить 50% скидку при уплате штрафа за нарушение зарегистрированное фото- и видеофиксациями.</p>
+                    </div>
+                </section>
+                <section id="section4" class="mb6 ma0-l swiper-slide flex-l flex-column-l items-end-l pa6-l overflow-scroll-l">
+                    <h1 class="graphik-s f3 f2-l tracked-tight ma0 mb4 ml4 w-70 w-50-l ml0-l">Уведомления о новых штрафах </h1>
+                    <a href="#" class="dib no-underline outline-0 sky-blue ml4 mb4 w-50-l ml0-l">
+                        <span class="db overflow-hidden">
+                            <img src="images/play.png" class="w24 h24 dib fl mr1"/> 
+                            Как включить уведомления?
+                        </span>
+                    </a>
+                    <p class="ma0 ml4 f6 tracked-tight w-80 mb5 w-50-l ml0-l f5-l">Некоторые водители могут не знать о существовании штрафа, также нет необходимости мониторить приложение каждый час. При помощи мобильного приложения OKauto Вы своевременно будете получать информацию о новых штрафах и успевать погашать их со скидкой. </p>
+                    <div class="center relative mb5 order-last-l self-start-l w-40-l ma0-l fixed-l">
+                        <div class="b-pure-blue br-100 absolute top-0 center dn-m dn-l" style="width: 320px;height:320px;left: 50%; margin-left:-160px;top: 10%;z-index: -1;"></div>
+                        <img src="images/bg-mobile_app-3.png" class="center db w269 w380">
+                    </div>
+                    <div class="w-50-l flex-l">
+                        <div class="pl4 w-90 mb4 w-50-l pl0-l mr3">
+                            <img src="images/push_nots.png" class="w40 h40 w60 h60 mb2 w4-l h4-l" />
+                            <h2 class="f4 ma0 mb2">Push-уведомления </h2>
+                            <p class="f6 ma0 dark-gray">Вы можете совершенно бесплатно и прямо в мобильном приложении получать сообщения о новых штрафах </p>
+                        </div>
+                        <div class="pl4 w-90 w-50-l pl0-l">
+                            <img src="images/sms.png" class="w40 h40 w60 h60 mb2 w4-l h4-l"/>
+                            <h2 class="f4 ma0 mb2">SMS-уведомления </h2>
+                            <p class="f6 ma0 dark-gray">Если у Вас нет интернет соединения, то информация о штрафах будет приходить в виде SMS </p>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <ul class="list ma0 pa0 overflow-hidden">
-                <li class="dib fl w2 h2" style="background:url(images/socials.png) no-repeat;background-size: cover;margin-right: 8px;"><a href="#" class="db w-100 h-100"></a></li>
-                <li class="dib fl w2 h2" style="background:url(images/socials.png) no-repeat;background-size: cover;margin-right: 8px;background-position-x: -40px;"><a href="#" class="db w-100 h-100"></a></li>
-                <li class="dib fl w2 h2" style="background:url(images/socials.png) no-repeat;background-size: cover;margin-right: 8px;background-position-x: -80px;"><a href="#" class="db w-100 h-100"></a></li>
-                <li class="dib fl w2 h2" style="background:url(images/socials.png) no-repeat;background-size: cover;margin-right: 8px;background-position-x: -120px;"><a href="#" class="db w-100 h-100"></a></li>
-                <li class="dib fl w2 h2" style="background:url(images/socials.png) no-repeat;background-size: cover;background-position-x: -160px;"><a href="#" class="db w-100 h-100"></a></li>
+            <div class="swiper-pagination"></div>
+        </main>
+        <footer class="pl4 pr3 h5-l flex flex-nowrap flex-column flex-row-l items-center-l justify-between-l pl5-l pr4-l pt2-l">
+            <div class="order-1 order-4-l mb3 mb0-l">
+                <a href="#" class="dib no-underline outline-0 overflow-hidden greyish-blue mr2">
+                    <img src="images/appstore-grey.png" class="dib fl w1 h1 mr1">
+                    <span class="dib fl f7">Для iOS</span>
+                </a>
+                <a href="#" class="dib no-underline outline-0 overflow-hidden greyish-blue">
+                    <img src="images/google_play-grey.png" class="dib fl w1 h1 mr1">
+                    <span class="dib fl f7">Для Android</span>
+                </a>
+                
+            </div>
+            <div class="absolute static-l order-2 self-end self-center-l">
+                <label class="" style="width: 46px;height: 24px;display: block;position: relative;">
+                    <input id="toggleSiteMode" type="checkbox" style="opacity: 0;width: 0;height: 0;">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <ul class="list ma0 pa0 order-3 w-60-l flex-l flex-row-l justify-center-l mb2 mb0-l">
+                <li class="dib w2 h2 mr2" style="background:url(images/socials.png) no-repeat;background-size: cover;"><a href="#" class="db w-100 h-100"></a></li>
+                <li class="dib w2 h2 mr2" style="background:url(images/socials.png) no-repeat;background-size: cover;background-position-x: -40px;"><a href="#" class="db w-100 h-100"></a></li>
+                <li class="dib w2 h2 mr2" style="background:url(images/socials.png) no-repeat;background-size: cover;background-position-x: -80px;"><a href="#" class="db w-100 h-100"></a></li>
+                <li class="dib w2 h2 mr2" style="background:url(images/socials.png) no-repeat;background-size: cover;background-position-x: -120px;"><a href="#" class="db w-100 h-100"></a></li>
+                <li class="dib w2 h2" style="background:url(images/socials.png) no-repeat;background-size: cover;background-position-x: -160px;"><a href="#" class="db w-100 h-100"></a></li>
             </ul>
-            <p class="ma0" style="color: #37474F; font-size: 14px;margin-top: 26px;margin-bottom: 40px;">© 2019 PS Engineering</p>
+            <p class="ma0 greyish-blue order-4 order-1-l f6 flex-l flex-column-l content-center-l mr5-l mb4 mb0-l">© 2019 PS Engineering</p>
         </footer>
         <script src="scripts/swiper.min.js"></script>
         <script src="scripts/main.js"></script>
+        <script src="scripts/swiperHelper.js"></script>
   </body>
 </html>

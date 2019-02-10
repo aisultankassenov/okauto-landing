@@ -1,23 +1,194 @@
-body {
-    max-width: 600px;
+/* Graphik LCG Typefaces ------------------ */
+@font-face {
+    font-family: 'GraphikLCG-Regular';
+    src: url('../fonts/graphik/GraphikLCG-Regular.eot?#iefix') format('embedded-opentype'),  
+         url('../fonts/graphik/GraphikLCG-Regular.otf')  format('opentype'),
+         url('../fonts/graphik/GraphikLCG-Regular.woff') format('woff'), 
+         url('../fonts/graphik/GraphikLCG-Regular.ttf')  format('truetype'), 
+         url('../fonts/graphik/GraphikLCG-Regular.svg#GraphikLCG-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'GraphikLCG-Semibold';
+    src: url('../fonts/graphik/GraphikLCG-Semibold.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/graphik/GraphikLCG-Semibold.otf')  format('opentype'),
+        url('../fonts/graphik/GraphikLCG-Semibold.woff') format('woff'), 
+        url('../fonts/graphik/GraphikLCG-Semibold.ttf')  format('truetype'), 
+        url('../fonts/graphik/GraphikLCG-Semibold.svg#GraphikLCG-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* ------------------ Graphik LCG Typefaces */
+
+html {
+    font: 16px/1.5 'GraphikLCG-Regular' ;
     min-width: 320px;
-    margin: 0 auto;
+}
+
+/* Font classes ---------------------------- */
+
+.graphik-r {
+    font-family: 'GraphikLCG-Regular';
+}
+
+.graphik-s {
+    font-family: 'GraphikLCG-Semibold';
+}
+
+.f8px {
+    font-size: 8px;
+}
+
+/* ---------------------------- Font classes */
+
+/* Colors ---------------------------------- */
+
+.dark-gray {
+    color: #9b9b9b;
+}
+
+.greyish-blue {
+    color: #37474f;
+}
+
+.sky-blue {
+    color: #2c99ed;
+}
+
+.hover-pure-blue:hover {
+    color: #0088ee;
+}
+
+/* ---------------------------------- Colors */
+
+/* Heights ---------------------------------- */
+
+.h40 {
+    height: 40px;
+}
+
+.h24 {
+    height: 24px;
+}
+
+@media screen and (min-width: 60em) {
+    .h60 {
+        height: 60px;
+    }
+}
+
+
+/* ---------------------------------- Heights */
+
+/* Widths ---------------------------------- */
+
+.w40 {
+    width: 40px;
+}
+
+.w24 {
+    width: 24px;
+}
+
+.w269 {
+    width: 269px;
+}
+
+@media screen and (min-width: 60em) {
+    .w380 {
+        width: 380px;
+    }
+
+    .w60 {
+        width: 60px;
+    }
+}
+
+/* ---------------------------------- Widths */
+
+/* Backgrounds ----------------------------- */
+
+.bg-ios_android {
+    background-image: url(../images/bg-ios_android.png);
+}
+
+.bg-right_bottom {
+    background-position: right bottom;
+}
+
+@media screen and (min-width: 60em) {
+    .bg-ios_android-l {
+        background-image: url(../images/bg-ios_android-full.png);
+    }
+
+    .bg-right_bottom-l {
+        background-position: right 200px;
+    }
+}
+
+.b-sea-green {
+    background-color: #40be65;
+}
+
+.b-pure-blue {
+    background-color: #0088ee;
+}
+
+.b-orange-red {
+    background-color: #ff382c;
+}
+
+/* ----------------------------- Backgrounds */
+
+/* Position -------------------------------- */
+
+.bottom--10 {
+    bottom: -10rem;
+}
+
+.right--10 {
+    right: -10rem;
+}
+
+/* -------------------------------- Position */
+
+/* Spacing -------------------------------- */
+
+@media screen and (min-width: 60em) {
+    .pl5rem {
+        padding-left: 5rem;
+    }
+}
+
+/* -------------------------------- Spacing */
+
+.swiper-container-vertical>.swiper-pagination-bullets {
+    left: 5rem;
+}
+.swiper-pagination-bullet {
+    width: 1rem;
+    height: 1px;
+    background: #000000;
+    margin-bottom: 25px;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0 25px;
+}
+
+.swiper-pagination-bullet-active {
+    width: 2rem;
+}
+
+.nav {
+
 }
 
 .night {
     background: #1b1b1b;
     color: #fff;
-}
-
-.nav-a,
-.nav-a:visited {
-    line-height: 20px;
-    color:#9b9b9b;
-}
-
-.nav-a:hover,
-.nav-a:active {
-    color: #0088ee;
 }
 
 .slider {
@@ -65,44 +236,12 @@ input:checked + .slider:before {
     transform: translateX(-22px);
 }
 
-.swiper-button-next {
-    background-image: url(../images/button-next.png);
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    right: 0;
-    margin-top: -20px;
-}
-
-.swiper-button-prev {
-    background-image: url(../images/button-prev.png);
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    left: 0;
-    margin-top: -20px;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets {
-    bottom: 56px;
-}
-
-.swiper-pagination-bullet  {
-    background: white;
-    opacity: 0.1;
-}
-
-.swiper-pagination-bullet-active {
-    background: white;
-    opacity: 1;
-}
-
 .nav {
     display: none;
 }
 
 .nav--openned {
-    display: block;
+    display: flex;
 }
 
 .main--hidden {
