@@ -73,6 +73,10 @@ html {
     height: 24px;
 }
 
+.h387 {
+    height: 387px;
+}
+
 @media screen and (min-width: 60em) {
     .h60 {
         height: 60px;
@@ -80,6 +84,10 @@ html {
 
     .mh60 {
         max-height: 60px;
+    }
+
+    .h588 {
+        height: 588px;
     }
 }
 
@@ -100,7 +108,15 @@ html {
     width: 269px;
 }
 
+.w387 {
+    width: 387px;
+}
+
 @media screen and (min-width: 60em) {
+    .w588 {
+        width: 588px;
+    }
+
     .w380 {
         width: 380px;
     }
@@ -144,6 +160,10 @@ html {
     background-color: #ff382c;
 }
 
+.b-pure-yellow {
+    background-color: #ffe200;
+}
+
 /* ----------------------------- Backgrounds */
 
 /* Position -------------------------------- */
@@ -154,6 +174,28 @@ html {
 
 .right--10 {
     right: -10rem;
+}
+
+.top-120 {
+    top: -120px;
+}
+
+.left-200 {
+    left: -200px;
+}
+
+@media screen and (min-width: 60em) {
+    .top5per {
+        top: 5%;
+    }
+
+    .left-300 {
+        left: -300px;
+    }
+
+    .right-300 {
+        right: -300px;
+    }
 }
 
 /* -------------------------------- Position */
