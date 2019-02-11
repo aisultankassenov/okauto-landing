@@ -25,7 +25,11 @@
             el: '.swiper-pagination',
             clickable: true
         },
-        loop: true
+        loop: true,
+        mousewheelControl: true,
+        slidesPerView: 1,
+        freeMode: true,
+        freeModeSticky: true
     });
   
     };
