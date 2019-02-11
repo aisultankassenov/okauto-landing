@@ -26,7 +26,7 @@
             clickable: true
         },
         loop: true,
-        mousewheelControl: true,
+        mousewheel: true,
         slidesPerView: 1,
         freeMode: true,
         freeModeSticky: true
