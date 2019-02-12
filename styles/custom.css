@@ -78,6 +78,10 @@ html {
 }
 
 @media screen and (min-width: 60em) {
+    .h40-l {
+        height: 40px;
+    }
+
     .h60 {
         height: 60px;
     }
@@ -123,6 +127,10 @@ html {
 
     .w60 {
         width: 60px;
+    }
+
+    .w40-l {
+        width: 40px;
     }
 }
 
@@ -328,3 +336,40 @@ html {
 }
 
 /* ---------------------- Navigation Styles */
+
+/* Page About Styles ---------------------- */
+.circle-about {
+    z-index: -1;
+    width: 662px;
+    height: 662px;
+    top: -350px;
+    left: -145px;
+}
+
+.circle-about-2 {
+    z-index: -1;
+    width: 406px;
+    height: 406px;
+    bottom: -190px;
+    right: -20px;
+}
+
+@media screen and (min-width: 60em) {
+    .circle-about {
+        z-index: -1;
+        width: 1440px;
+        height: 1440px;
+        top: -1050px;
+        left: -15%;
+    }
+
+    .circle-about-2 {
+        z-index: -1;
+        width: 1440px;
+        height: 1440px;
+        bottom: -1050px;
+        right: -30%;
+    }
+}
+
+/* ---------------------- Page About Styles  */
