@@ -310,6 +310,23 @@ html {
 
 /* ------------------ Day/Night Mode Slider */
 
+/* Dark Mode Styles ----------------------- */
+.dark {
+    background: #343739;
+    color: #ffffff;
+}
+
+.dark * {
+    color: #ffffff;
+}
+
+.dark .sky-blue > span {
+    color: #ffe200 !important;
+}
+
+
+/* ----------------------- Dark Mode Styles */
+
 /* Navigation Styles ---------------------- */
 .nav {
     display: none;
@@ -342,7 +359,7 @@ html {
     z-index: -1;
     width: 662px;
     height: 662px;
-    top: -350px;
+    top: -300px;
     left: -145px;
 }
 
