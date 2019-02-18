@@ -132,8 +132,9 @@ html {
         width: 60px;
     }
 
-    .w380 {
-        width: 380px;
+    .mobile-app {
+        width: 32vw;
+        max-width: 460px;
     }
 
     .w588 {
@@ -234,6 +235,14 @@ html {
 @media screen and (min-width: 60em) {
     .pl5rem {
         padding-left: 5rem;
+    }
+
+    .pl9vw {
+        padding-left: 9vw;
+    }
+
+    .pl11vw {
+        padding-left: 11vw;
     }
 
     .mb6rem {
