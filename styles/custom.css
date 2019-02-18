@@ -262,15 +262,28 @@ html {
 /* -------------------------------- Opacity */
 
 /* Swiper Styles -------------------------- */
+.swiper-slide {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.swiper-slide-active {
+    transition: all 1s ease-out;
+    opacity: 1;
+}
+
 .swiper-container-vertical>.swiper-pagination-bullets {
     left: 5rem;
 }
+
 .swiper-pagination-bullet {
+    outline: 0;
     width: 1rem;
     background: none;
     height: 20px;
     border-radius: 0;
     border-bottom: 1px solid #000000;
+    transition: all 1s ease-out;
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
