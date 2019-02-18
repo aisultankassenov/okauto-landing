@@ -262,38 +262,39 @@ html {
 /* -------------------------------- Opacity */
 
 /* Swiper Styles -------------------------- */
-.swiper-slide {
-    opacity: 0;
-    transition: all 0.5s ease-out;
+@media screen and (min-width: 60em) {
+    .swiper-slide {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+    
+    .swiper-slide-active {
+        transition: all 1s ease-out;
+        opacity: 1;
+    }
+    
+    .swiper-container-vertical>.swiper-pagination-bullets {
+        left: 5rem;
+    }
+    
+    .swiper-pagination-bullet {
+        outline: 0;
+        width: 1rem;
+        background: none;
+        height: 20px;
+        border-radius: 0;
+        border-bottom: 1px solid #000000;
+        transition: all 1s ease-out;
+    }
+    
+    .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 0 15px;
+    }
+    
+    .swiper-pagination-bullet-active {
+        width: 2rem;
+    }
 }
-
-.swiper-slide-active {
-    transition: all 1s ease-out;
-    opacity: 1;
-}
-
-.swiper-container-vertical>.swiper-pagination-bullets {
-    left: 5rem;
-}
-
-.swiper-pagination-bullet {
-    outline: 0;
-    width: 1rem;
-    background: none;
-    height: 20px;
-    border-radius: 0;
-    border-bottom: 1px solid #000000;
-    transition: all 1s ease-out;
-}
-
-.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 0 15px;
-}
-
-.swiper-pagination-bullet-active {
-    width: 2rem;
-}
-
 /* -------------------------- Swiper Styles */
 
 /* Day/Night Mode Slider ------------------ */
