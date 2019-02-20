@@ -139,6 +139,10 @@ html {
         width: 588px;
     }
 
+    .mw90-l {
+        max-width: 90rem;
+    }
+
 }
 
 /* ---------------------------------- Widths */
@@ -432,3 +436,7 @@ html {
 }
 
 /* ---------------------- Page About Styles  */
+
+@media screen and (min-width: 60em) and (max-width: 80em) {
+    
+}
