@@ -1,0 +1,169 @@
+@media screen and (min-width: 60em) { 
+
+    /* Heights ---------------------------------- */
+
+    .h40-l {
+        height: 40px;
+    }
+
+    .h60 {
+        height: 60px;
+    }
+
+    .maxh60 {
+        max-height: 60px;
+    }
+
+    .minh60 {
+        min-height: 60px;
+    }
+
+    .h588 {
+        height: 588px;
+    }
+
+    /* ---------------------------------- Heights */
+
+    /* Widths ---------------------------------- */
+    .w40-l {
+        width: 40px;
+    }
+
+    .w60 {
+        width: 60px;
+    }
+
+    .mobile-app {
+        width: 32vw;
+        max-width: 300px;
+    }
+
+    .w588 {
+        width: 588px;
+    }
+
+    .mw80-l {
+        max-width: 80rem;
+    }
+
+    /* ---------------------------------- Widths */
+
+    /* Backgrounds ----------------------------- */
+
+    .bg-ios_android-l {
+        background-image: url(../images/bg-ios_android-full.png);
+    }
+
+    .bg-right_bottom-l {
+        background-position: right 200px;
+    }
+
+    /* ----------------------------- Backgrounds */
+
+    /* Position -------------------------------- */
+
+    .top5per {
+        top: 5%;
+    }
+
+    .left-300 {
+        left: -300px;
+    }
+
+    .right-300 {
+        right: -300px;
+    }
+
+    /* -------------------------------- Position */
+
+    /* Spacing -------------------------------- */
+
+    .pl5rem {
+        padding-left: 5rem;
+    }
+
+    .pl9vw {
+        padding-left: 9vw;
+    }
+
+    .pl11vw {
+        padding-left: 11vw;
+    }
+
+    .mb6rem {
+        margin-bottom: 0;
+    }
+
+    .pt20 {
+        padding-top: 20px;
+    }
+
+    .pb20 {
+        padding-bottom: 20px;
+    }
+
+    /* -------------------------------- Spacing */
+
+    /* Opacity -------------------------------- */
+
+    .o-60-l {
+        opacity: 0.6;
+    }
+
+    /* -------------------------------- Opacity */
+
+    /* Swiper Styles -------------------------- */
+    .swiper-slide {
+        opacity: 0.1;
+        transition: all 0.5s ease-out;
+    }
+    
+    .swiper-slide-active {
+        transition: all 1s ease-out;
+        opacity: 1;
+    }
+    
+    .swiper-container-vertical>.swiper-pagination-bullets {
+        left: 2rem;
+    }
+    
+    .swiper-pagination-bullet {
+        outline: 0;
+        width: 1rem;
+        background: none;
+        height: 20px;
+        border-radius: 0;
+        border-bottom: 1px solid #000000;
+        transition: all 1s ease-out;
+    }
+    
+    .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 0 15px;
+    }
+    
+    .swiper-pagination-bullet-active {
+        width: 2rem;
+    }
+    /* -------------------------- Swiper Styles */
+
+    /* Page About Styles ---------------------- */
+
+    .circle-about {
+        z-index: -1;
+        width: 1440px;
+        height: 1440px;
+        top: -1050px;
+        left: -15%;
+    }
+
+    .circle-about-2 {
+        z-index: -1;
+        width: 1440px;
+        height: 1440px;
+        bottom: -1050px;
+        right: -30%;
+    }
+
+    /* ---------------------- Page About Styles  */
+
+}
