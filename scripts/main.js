@@ -3,6 +3,8 @@
     'use strict';
 
     let main = document.getElementById("main");
+    let header = document.querySelector(".header");
+    let footer = document.querySelector(".footer");
     
     function init() {
         toggleMode();
@@ -10,7 +12,11 @@
         clickOnLinks();
     
         document.getElementById("home-link").addEventListener("click", function() {
-            if(!main.classList.contains("main--fixed")) main.classList.add("main--fixed");
+            if(!main.classList.contains("main--fixed")) {
+                main.classList.add("main--fixed");
+                header.classList.add("header--fixed");
+                footer.classList.add("footer--fixed");
+            }
             goToSection("home");
         });
 
@@ -37,10 +43,11 @@
             el.addEventListener("click", function () {
                 if(el.classList.contains("link")) {
                     if (el.getAttribute("data-section") !== "home" 
-                    && el.getAttribute("data-section") !== "about"
                     && main.classList.contains("main--fixed")) {
                         main.classList.remove("main--fixed");
-                    }
+                        header.classList.remove("header--fixed");
+                        footer.classList.remove("footer--fixed");
+                    } 
                     goToSection(el.getAttribute("data-section"));
                 } 
 

@@ -40,11 +40,16 @@
                     pagination.classList.add('swiper-pagination--white');
                 },
                 fromEdge: function() {
-                    if (header.classList.contains('header--white')) {
+                    if (header.classList.contains('header--white') && mySwiper.isBeginning) {
                         header.classList.remove('header--white');
                         footer.classList.remove('footer--white');
                         pagination.classList.remove('swiper-pagination--white');
                     }
+                },
+                beforeDestroy: function() {
+                    header.classList.remove('header--white');
+                    footer.classList.remove('footer--white');
+                    pagination.classList.remove('swiper-pagination--white');
                 }
             }
         });

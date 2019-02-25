@@ -266,6 +266,11 @@
 
     /* Page About Styles ---------------------- */
 
+    .section--about {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
     .circle-about {
         z-index: -1;
         width: 1440px;
