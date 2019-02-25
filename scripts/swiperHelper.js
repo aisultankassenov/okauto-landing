@@ -34,13 +34,12 @@
             slidesPerView: 1,
             speed: 700,
             on: {
-                reachEnd: function () {
-                    header.classList.add('header--white');
-                    footer.classList.add('footer--white');
-                    pagination.classList.add('swiper-pagination--white');
-                },
-                fromEdge: function() {
-                    if (header.classList.contains('header--white') && mySwiper.isBeginning) {
+                slideChange: function() {
+                    if(mySwiper.isEnd) {
+                        header.classList.add('header--white');
+                        footer.classList.add('footer--white');
+                        pagination.classList.add('swiper-pagination--white');
+                    } else if (header.classList.contains('header--white')) {
                         header.classList.remove('header--white');
                         footer.classList.remove('footer--white');
                         pagination.classList.remove('swiper-pagination--white');
