@@ -44,6 +44,7 @@
                     goToSection(el.getAttribute("data-section"));
                 } 
 
+                el.classList.toggle("pure-blue");
                 toggleMenu();
             });
         });

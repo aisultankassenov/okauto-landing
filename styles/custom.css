@@ -57,6 +57,10 @@ html {
     color: #2c99ed;
 }
 
+.pure-blue {
+    color: #0088ee;
+}
+
 .hover-pure-blue:hover {
     color: #0088ee;
 }
@@ -252,9 +256,15 @@ html {
         display: block;
     }
 
-.hamburger--hidden {
-    display: none;
+.hamburger {
+    height: 100%;
+    background: url(../images/hamburger.png) center no-repeat;
+    background-size: cover;
 }
+    
+    .hamburger--hidden {
+        display: none;
+    }
 
 /* ---------------------- Navigation Styles */
 
@@ -293,6 +303,44 @@ html {
     display: block;
 }
 
+.swiper-container--mm .swiper-wrapper {
+    height: 675px;
+}
+
+.swiper-container--mm .swiper-slide {
+    height: 100%;
+}
+
+    .swiper-slide--vcru {
+        background: url(../images/bg_slider-1.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .swiper-slide--capital {
+        background: url(../images/bg_slider-2.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .swiper-slide--forbes {
+        background: url(../images/bg_slider-3.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .swiper-slide--forklog {
+        background: url(../images/bg_slider-4.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .swiper-slide--steppe {
+        background: url(../images/bg_slider-5.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .swiper-slide--expert {
+        background: url(../images/bg_slider-6.png) center no-repeat;
+        background-size: cover;
+    }
+
 .swiper-button-next {
     background-image: url(../images/button-next.png);
     width: 40px;
@@ -324,3 +372,87 @@ html {
     background: white;
     opacity: 1;
 }
+
+.slider-link {
+    color: #ffe200;
+    border-bottom: 1px solid #ffe200;
+    padding-bottom: 4px;
+}
+
+.socials {
+    background:url(../images/socials.png) no-repeat;
+    background-size: cover;
+}
+
+    .socials--facebook {
+        background-position-x: -40px;
+    }
+
+    .socials--youtube {
+        background-position-x: -80px;
+    }
+
+    .socials--vk {
+        background-position-x: -120px;
+    }
+
+    .socials--whatsapp {
+        background-position-x: -160px;
+    }
+
+.apps {
+    padding-left: 20px;
+    position: relative;
+} 
+
+    .apps:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    .apps--ios:before {
+        background: url(../images/appstore-grey.png) no-repeat; 
+        background-size: cover;
+    }
+
+    .apps--android:before {
+        background: url(../images/google_play-grey.png) no-repeat;
+        background-size: cover;
+    }
+
+.header--white,
+.footer--white {
+    color: #ffffff;
+}
+
+    .header--white *,
+    .footer--white * {
+        color: #ffffff;
+    }
+
+    .header--white .hamburger {
+        background: url(../images/hamburger-white.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .footer--white .mode-button {
+        display: none;
+    }
+
+    .footer--white .socials {
+        background-image: url(../images/socials-white.png);
+    }
+
+    .footer--white .apps--ios:before {
+        background: url(../images/appstore-white.png) no-repeat; 
+        background-size: cover;
+    }
+
+    .footer--white .apps--android:before {
+        background: url(../images/google_play-white.png) no-repeat; 
+        background-size: cover;
+    }
