@@ -38,7 +38,7 @@
             loop: true,
             slidesPerView: 1,
             pagination: {
-                el: '.swiper-container--mm .swiper-pagination',
+                el: '.swiper-container--mm .swiper-pagination--mm',
             },
             navigation: {
                 nextEl: '.swiper-container--mm .swiper-button-next',
@@ -50,5 +50,5 @@
     breakpoint.addListener(breakpointChecker);
   
     breakpointChecker();
-    //initMassMediaSlider();
+    initMassMediaSlider();
   })();

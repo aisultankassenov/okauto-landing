@@ -289,6 +289,38 @@ html {
 
 /* ---------------------- Page About Styles  */
 
-.swiper-wrapper {
+.swiper-wrapper--home {
     display: block;
+}
+
+.swiper-button-next {
+    background-image: url(../images/button-next.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    right: 0;
+    margin-top: -20px;
+}
+
+.swiper-button-prev {
+    background-image: url(../images/button-prev.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    left: 0;
+    margin-top: -20px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 56px;
+}
+
+.swiper-pagination--mm .swiper-pagination-bullet  {
+    background: white;
+    opacity: 0.1;
+}
+
+.swiper-pagination--mm .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
 }
