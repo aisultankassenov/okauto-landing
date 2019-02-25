@@ -2,10 +2,6 @@
 
     /* Heights ---------------------------------- */
 
-    .h40-l {
-        height: 40px;
-    }
-
     .h60 {
         height: 60px;
     }
@@ -25,9 +21,6 @@
     /* ---------------------------------- Heights */
 
     /* Widths ---------------------------------- */
-    .w40-l {
-        width: 40px;
-    }
 
     .w60 {
         width: 60px;
@@ -42,23 +35,7 @@
         width: 588px;
     }
 
-    .mw80-l {
-        max-width: 80rem;
-    }
-
     /* ---------------------------------- Widths */
-
-    /* Backgrounds ----------------------------- */
-
-    .bg-ios_android-l {
-        background-image: url(../images/bg-ios_android-full.png);
-    }
-
-    .bg-right_bottom-l {
-        background-position: right 200px;
-    }
-
-    /* ----------------------------- Backgrounds */
 
     /* Position -------------------------------- */
 
@@ -112,13 +89,58 @@
 
     /* -------------------------------- Opacity */
 
-    /* Swiper Styles -------------------------- */
-    .swiper-slide {
-        opacity: 0.1;
-        transition: all 0.5s ease-out;
+    /* Navigation Styles ---------------------- */
+    .nav {
+        position: fixed;
+        width: 100%;
+        top: -100%;
+        left: 0;
+        right: 0;
+        transition: all 0.5s;
+        height: auto;
+        transition-delay: 0.5s;
+        display: flex;
+    }
+
+    .nav--openned {
+        top: 100px;
+        transition-delay: 0s;
+        display: flex;
+    }
+
+    .nav * {
+        opacity: 0;
+        transition: all 0.5s;
+        transition-delay: 0s;
     }
     
-    .swiper-slide-active {
+    .nav--openned * {
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+
+    /* ---------------------- Navigation Styles */
+
+    /* ---------------------- */
+    .main--fixed {
+        position: fixed;
+        top: 100px;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    /* ---------------------- */
+
+    /* Swiper Styles -------------------------- */
+    .section--home .swiper-slide {
+        opacity: 0.1;
+        transition: all 0.5s ease-out;
+        background: white;
+    }
+    
+    .section--home .swiper-slide-active {
         transition: all 1s ease-out;
         opacity: 1;
     }
@@ -127,7 +149,7 @@
         left: 2rem;
     }
     
-    .swiper-pagination-bullet {
+    .swiper-pagination--home .swiper-pagination-bullet {
         outline: 0;
         width: 1rem;
         background: none;
@@ -141,8 +163,28 @@
         margin: 0 0 15px;
     }
     
-    .swiper-pagination-bullet-active {
+    .swiper-pagination--home .swiper-pagination-bullet-active {
         width: 2rem;
+    }
+
+    /*
+    .swiper-slide .slide-img {
+        top: -100%;
+    }
+    
+    .swiper-slide-active .slide-img {
+        top: 12%;
+        transition: 1s ease-in-out;
+    }*/
+
+    .swiper-slide .slide-txt {
+        opacity: 0;
+        transition: 1s ease-out;
+    }
+    
+    .swiper-slide-active .slide-txt {
+        opacity: 1;
+        transition-delay: 0.5s;
     }
     /* -------------------------- Swiper Styles */
 

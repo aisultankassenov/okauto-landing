@@ -228,10 +228,16 @@ html {
 /* Navigation Styles ---------------------- */
 .nav {
     display: none;
+	height: 0;
+  	opacity: 0;
+	overflow: hidden;
+	transition: height 0.3s ease-in-out, opacity 0.7s ease-in-out;
 }
 
     .nav--openned {
-        display: flex;
+        display: block;
+        height: auto;
+        opacity: 1;
     }
 
 .main--hidden {
@@ -252,6 +258,18 @@ html {
 
 /* ---------------------- Navigation Styles */
 
+/* Sections Style ------------------------- */
+
+.section {
+    display: none;
+}
+
+    .section--active {
+        display: block;
+    }
+
+/* ------------------------- Sections Style */
+
 /* Page About Styles ---------------------- */
 .circle-about {
     z-index: -1;
@@ -270,3 +288,7 @@ html {
 }
 
 /* ---------------------- Page About Styles  */
+
+.swiper-wrapper {
+    display: block;
+}
