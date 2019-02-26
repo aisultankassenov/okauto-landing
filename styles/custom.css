@@ -245,6 +245,23 @@ html {
         opacity: 1;
     }
 
+    .whatsapp {
+        padding-left: 32px;
+    }
+    
+        .whatsapp:before {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: -3px;
+            left: 0;
+            background: url(../images/whatsapp.png) no-repeat;
+            background-size: cover;
+            transition-delay: 0.5s;
+        }
+
 .main--hidden {
     display: none;
 }
@@ -425,6 +442,11 @@ html {
     .header--white *,
     .footer--white * {
         color: #ffffff;
+    }
+
+    .dark .whatsapp:before {
+        background: url(../images/whatsapp-white.png) center no-repeat;
+        background-size: cover;
     }
 
     .header--white .nav_btn,
