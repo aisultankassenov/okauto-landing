@@ -34,6 +34,7 @@
 
     function clickOnButton () {
         document.querySelector("#menuToggle").addEventListener("click", function() {
+            this.classList.toggle("nav_btn--active")
             toggleMenu();
         });
     }
@@ -60,8 +61,6 @@
     function toggleMenu () {
         document.getElementById("nav").classList.toggle("nav--openned");
         document.getElementById("main").classList.toggle("main--hidden");
-        document.getElementById("cross").classList.toggle("cross--displayed");
-        document.getElementById("hamburger").classList.toggle("hamburger--hidden");
     }
 
     function goToSection(section) {

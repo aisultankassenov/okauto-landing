@@ -249,22 +249,14 @@ html {
     display: none;
 }
 
-.cross {
-    display: none;
-}
-
-    .cross--displayed {
-        display: block;
-    }
-
-.hamburger {
-    height: 100%;
+.nav_btn {
     background: url(../images/hamburger.png) center no-repeat;
     background-size: cover;
 }
-    
-    .hamburger--hidden {
-        display: none;
+
+    .nav_btn--active {
+        background: url(../images/cross.png) center no-repeat;
+        background-size: cover;
     }
 
 /* ---------------------- Navigation Styles */
@@ -435,9 +427,15 @@ html {
         color: #ffffff;
     }
 
-    .header--white .hamburger,
-    .dark .hamburger {
+    .header--white .nav_btn,
+    .dark .nav_btn {
         background: url(../images/hamburger-white.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .header--white .nav_btn--active,
+    .dark .nav_btn--active {
+        background: url(../images/cross-white.png) center no-repeat;
         background-size: cover;
     }
 
