@@ -180,7 +180,8 @@
         transition: all 1s ease-out;
     }
 
-    .swiper-pagination--white .swiper-pagination-bullet {
+    .swiper-pagination--white .swiper-pagination-bullet,
+    .dark .swiper-pagination .swiper-pagination-bullet {
         border-color: #ffffff;
     }
     
@@ -267,8 +268,9 @@
     /* Page About Styles ---------------------- */
 
     .section--about {
-        padding-top: 100px;
+        padding-top: 140px;
         padding-bottom: 60px;
+        padding-left: 90px;
     }
 
     .circle-about {

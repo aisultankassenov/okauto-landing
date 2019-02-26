@@ -220,6 +220,7 @@ html {
 
 .dark * {
     color: #ffffff;
+    border-color: #ffffff;
 }
 
 .dark .sky-blue > span {
@@ -434,7 +435,8 @@ html {
         color: #ffffff;
     }
 
-    .header--white .hamburger {
+    .header--white .hamburger,
+    .dark .hamburger {
         background: url(../images/hamburger-white.png) center no-repeat;
         background-size: cover;
     }
@@ -443,16 +445,77 @@ html {
         display: none;
     }
 
-    .footer--white .socials {
+    .footer--white .socials,
+    .dark .socials {
         background-image: url(../images/socials-white.png);
     }
 
-    .footer--white .apps--ios:before {
+    .footer--white .apps--ios:before,
+    .dark .apps--ios:before {
         background: url(../images/appstore-white.png) no-repeat; 
         background-size: cover;
     }
 
-    .footer--white .apps--android:before {
+    .footer--white .apps--ios:before,
+    .dark .apps--android:before {
         background: url(../images/google_play-white.png) no-repeat; 
+        background-size: cover;
+    }
+
+.download_app {
+    position: relative;
+    padding-left: 32px;
+}
+    
+    .download_app:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 8px;
+        top: 50%;
+        margin-top: -12px;
+    }
+
+    .download_app--ios:before {
+        background: url(../images/appstore.png) no-repeat;
+        background-size: cover;
+    }
+
+    .download_app--android:before {
+        background: url(../images/google_play.png) no-repeat;
+        background-size: cover;
+    }
+
+    .dark .download_app--ios:before {
+        background: url(../images/appstore-white.png) no-repeat;
+        background-size: cover;
+    }
+
+    .dark .download_app--android:before {
+        background: url(../images/google_play-white.png) no-repeat;
+        background-size: cover;
+    }
+
+.video-link {
+    padding-left: 32px;
+}
+    
+    .video-link:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        width:  24px;
+        height: 24px;
+        left: 0;
+        background: url(../images/play.png) no-repeat;
+        background-size: cover;
+    }
+
+    .dark .video-link:before {
+        background: url(../images/play-yellow.png) no-repeat;
         background-size: cover;
     }
