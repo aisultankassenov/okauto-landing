@@ -37,10 +37,6 @@ html {
     font-family: 'GraphikLCG-Semibold';
 }
 
-.f8px {
-    font-size: 8px;
-}
-
 /* ---------------------------- Font classes */
 
 /* Colors ---------------------------------- */
@@ -61,10 +57,6 @@ html {
     color: #0088ee;
 }
 
-.hover-pure-blue:hover {
-    color: #0088ee;
-}
-
 /* ---------------------------------- Colors */
 
 /* Heights ---------------------------------- */
@@ -75,10 +67,6 @@ html {
 
 .h40 {
     height: 40px;
-}
-
-.h387 {
-    height: 387px;
 }
 
 /* ---------------------------------- Heights */
@@ -93,21 +81,9 @@ html {
     width: 40px;
 }
 
-.w269 {
-    width: 269px;
-}
-
-.w387 {
-    width: 387px;
-}
-
 /* ---------------------------------- Widths */
 
 /* Backgrounds ----------------------------- */
-
-.bg-right_bottom {
-    background-position: right bottom;
-}
 
 .b-sea-green {
     background-color: #40be65;
@@ -129,29 +105,12 @@ html {
 
 /* Position -------------------------------- */
 
-
-.top-120 {
-    top: -120px;
-}
-
-.left-200 {
-    left: -200px;
-}
-
 .left-8 {
     left: -8px;
 }
 
 .bottom-4 {
     bottom: 4rem;
-}
-
-.bottom--10 {
-    bottom: -10rem;
-}
-
-.right--10 {
-    right: -10rem;
 }
 
 /* -------------------------------- Position */
@@ -164,53 +123,7 @@ html {
 
 /* -------------------------------- Spacing */
 
-/* Day/Night Mode Slider ------------------ */
-.slider {
-    border-radius: 18px;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:url(../images/moon.png)  rgba(55, 71, 79, 0.1) no-repeat;
-    background-size: 12px 12px;
-    background-position: 6px;
-    -webkit-transition: .3s;
-    transition: .3s;
-}
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 22px;
-        width: 22px;
-        right: 1px;
-        bottom: 1px;
-        background: url(../images/sun.png) white no-repeat;
-        background-size: 12px 12px;
-        background-position: 6px;
-        border-radius: 50%;
-        -webkit-transition: .5s;
-        transition: .5s;
-    }
-
-    input:checked + .slider {
-        background:url(../images/sun-white.png)  #5d5f61 no-repeat;
-        background-size: 12px 12px;
-        background-position: 28px 6px;
-    }
-
-        input:checked + .slider:before {
-            background: url(../images/moon-white.png) #343739 no-repeat;
-            background-size: 12px 12px;
-            background-position: 5px;
-            -webkit-transform: translateX(-22px);
-            -ms-transform: translateX(-22px);
-            transform: translateX(-22px);
-        }
-
-/* ------------------ Day/Night Mode Slider */
+/* ------------------------------------------ Elements styles -------------------------------------------*/
 
 /* Dark Mode Styles ----------------------- */
 .dark {
@@ -218,17 +131,43 @@ html {
     color: #ffffff;
 }
 
-.dark * {
-    color: #ffffff;
-    border-color: #ffffff;
-}
-
-.dark .sky-blue > span {
-    color: #ffe200 !important;
-}
-
+    .dark * {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
 
 /* ----------------------- Dark Mode Styles */
+
+/* Header Styles -------------------------- */
+.header--white {
+    color: #ffffff;
+}
+
+    .header--white * {
+        color: #ffffff;
+    }
+
+    .nav_btn {
+        background: url(../images/hamburger.png) center no-repeat;
+        background-size: cover;
+    }
+        .nav_btn--active {
+            background: url(../images/cross.png) center no-repeat;
+            background-size: cover;
+        }
+
+    .header--white .nav_btn,
+    .dark .nav_btn {
+        background: url(../images/hamburger-white.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .header--white .nav_btn--active,
+    .dark .nav_btn--active {
+        background: url(../images/cross-white.png) center no-repeat;
+        background-size: cover;
+    }
+/* -------------------------- Header Styles */
 
 /* Navigation Styles ---------------------- */
 .nav {
@@ -238,17 +177,26 @@ html {
 	overflow: hidden;
 	transition: height 0.3s ease-in-out, opacity 0.7s ease-in-out;
 }
-
     .nav--openned {
         display: block;
         height: auto;
         opacity: 1;
     }
 
+    .nav_link {}
+    .nav_link:hover,
+    .nav_link--active {
+        color: #0088ee;
+    }
+
+    .dark .nav_link:hover,
+    .dark .nav_link--active {
+        color:  #ffe200 ;
+    }
+
     .whatsapp {
         padding-left: 32px;
     }
-    
         .whatsapp:before {
             content: "";
             display: block;
@@ -262,23 +210,18 @@ html {
             transition-delay: 0.5s;
         }
 
-.main--hidden {
-    display: none;
-}
-
-.nav_btn {
-    background: url(../images/hamburger.png) center no-repeat;
-    background-size: cover;
-}
-
-    .nav_btn--active {
-        background: url(../images/cross.png) center no-repeat;
-        background-size: cover;
-    }
+        .dark .whatsapp:before {
+            background: url(../images/whatsapp-white.png) center no-repeat;
+            background-size: cover;
+        }
 
 /* ---------------------- Navigation Styles */
 
-/* Sections Style ------------------------- */
+/* Content Styles ------------------------ */
+
+.main--hidden {
+    display: none;
+}
 
 .section {
     display: none;
@@ -287,255 +230,307 @@ html {
     .section--active {
         display: block;
     }
+    
+    .section--home {}
 
-/* ------------------------- Sections Style */
+        /* Sliders Styles */
+        .swiper-wrapper--home {
+            display: block;
+        }
+    
+        .swiper-container--mm .swiper-wrapper {
+            height: 675px;
+        }
+    
+        .swiper-container--mm .swiper-slide {
+            height: 100%;
+        }
+    
+            .swiper-slide--vcru {
+                background: url(../images/bg_slider-1.png) center no-repeat;
+                background-size: cover;
+            }
+        
+            .swiper-slide--capital {
+                background: url(../images/bg_slider-2.png) center no-repeat;
+                background-size: cover;
+            }
+        
+            .swiper-slide--forbes {
+                background: url(../images/bg_slider-3.png) center no-repeat;
+                background-size: cover;
+            }
+        
+            .swiper-slide--forklog {
+                background: url(../images/bg_slider-4.png) center no-repeat;
+                background-size: cover;
+            }
+        
+            .swiper-slide--steppe {
+                background: url(../images/bg_slider-5.png) center no-repeat;
+                background-size: cover;
+            }
+        
+            .swiper-slide--expert {
+                background: url(../images/bg_slider-6.png) center no-repeat;
+                background-size: cover;
+            }
+    
+            .swiper-container--mm .swiper-button-next {
+                background-image: url(../images/button-next.png);
+                width: 40px;
+                height: 40px;
+                background-size: cover;
+                right: 0;
+                margin-top: -20px;
+            }
+            
+            .swiper-container--mm  .swiper-button-prev {
+                background-image: url(../images/button-prev.png);
+                width: 40px;
+                height: 40px;
+                background-size: cover;
+                left: 0;
+                margin-top: -20px;
+            }
+    
+            .swiper-container-horizontal>.swiper-pagination-bullets {
+                bottom: 56px;
+            }
+    
+            .swiper-pagination--mm .swiper-pagination-bullet  {
+                background: white;
+                opacity: 0.1;
+            }
+    
+            .swiper-pagination--mm .swiper-pagination-bullet-active {
+                background: white;
+                opacity: 1;
+            }
+    
+            .slider-link {
+                color: #ffe200;
+                border-bottom: 1px solid #ffe200;
+                padding-bottom: 4px;
+            }
 
-/* Page About Styles ---------------------- */
-.circle-about {
-    z-index: -1;
-    width: 662px;
-    height: 662px;
-    top: -300px;
-    left: -145px;
-}
+    /* Download App Buttons Styles*/
+    .download_app {
+        position: relative;
+        padding-left: 32px;
+    }
+    
+        .download_app span:first-child {
+            font-size: 8px;
+        }
+        
+        .download_app:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 8px;
+            top: 50%;
+            margin-top: -12px;
+        }
+    
+        .download_app--ios:before {
+            background: url(../images/appstore.png) no-repeat;
+            background-size: cover;
+        }
+    
+        .download_app--android:before {
+            background: url(../images/google_play.png) no-repeat;
+            background-size: cover;
+        }
+    
+        .dark .download_app--ios:before {
+            background: url(../images/appstore-white.png) no-repeat;
+            background-size: cover;
+        }
+    
+        .dark .download_app--android:before {
+            background: url(../images/google_play-white.png) no-repeat;
+            background-size: cover;
+        }
+    
+    /* Video Links */
+    .video-link {
+        padding-left: 32px;
+    }
+        
+        .video-link:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            width:  24px;
+            height: 24px;
+            left: 0;
+            background: url(../images/play.png) no-repeat;
+            background-size: cover;
+        }
 
-.circle-about-2 {
-    z-index: -1;
-    width: 406px;
-    height: 406px;
-    bottom: -190px;
-    right: -20px;
-}
+        .dark .video-link {
+            color: #ffe200;
+        }
+    
+        .dark .video-link:before {
+            background: url(../images/play-yellow.png) no-repeat;
+            background-size: cover;
+        }
 
-/* ---------------------- Page About Styles  */
 
-.swiper-wrapper--home {
-    display: block;
-}
-
-.swiper-container--mm .swiper-wrapper {
-    height: 675px;
-}
-
-.swiper-container--mm .swiper-slide {
-    height: 100%;
-}
-
-    .swiper-slide--vcru {
-        background: url(../images/bg_slider-1.png) center no-repeat;
-        background-size: cover;
+    /* Section About Styles */
+    .circle-about {
+        z-index: -1;
+        width: 170vw;
+        height: 662px;
+        top: -35%;
+        left: -35%;
     }
 
-    .swiper-slide--capital {
-        background: url(../images/bg_slider-2.png) center no-repeat;
-        background-size: cover;
+    .circle-about-2 {
+        z-index: -1;
+        width: 406px;
+        height: 406px;
+        bottom: -190px;
+        right: -20px;
     }
 
-    .swiper-slide--forbes {
-        background: url(../images/bg_slider-3.png) center no-repeat;
-        background-size: cover;
+    /* Section User Agreement Styles */
+    .circle-yellow {
+        width: 387px;
+        height: 387px;
+        top: -120px;
+        left: -200px;
+        z-index: -1;
     }
 
-    .swiper-slide--forklog {
-        background: url(../images/bg_slider-4.png) center no-repeat;
-        background-size: cover;
-    }
+/* ------------------------ Content Styles  */
 
-    .swiper-slide--steppe {
-        background: url(../images/bg_slider-5.png) center no-repeat;
-        background-size: cover;
-    }
+/* Footer Styles -------------------------- */
 
-    .swiper-slide--expert {
-        background: url(../images/bg_slider-6.png) center no-repeat;
-        background-size: cover;
-    }
-
-.swiper-button-next {
-    background-image: url(../images/button-next.png);
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    right: 0;
-    margin-top: -20px;
-}
-
-.swiper-button-prev {
-    background-image: url(../images/button-prev.png);
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    left: 0;
-    margin-top: -20px;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets {
-    bottom: 56px;
-}
-
-.swiper-pagination--mm .swiper-pagination-bullet  {
-    background: white;
-    opacity: 0.1;
-}
-
-.swiper-pagination--mm .swiper-pagination-bullet-active {
-    background: white;
-    opacity: 1;
-}
-
-.slider-link {
-    color: #ffe200;
-    border-bottom: 1px solid #ffe200;
-    padding-bottom: 4px;
-}
-
-.socials {
-    background:url(../images/socials.png) no-repeat;
-    background-size: cover;
-}
-
-    .socials--facebook {
-        background-position-x: -40px;
-    }
-
-    .socials--youtube {
-        background-position-x: -80px;
-    }
-
-    .socials--vk {
-        background-position-x: -120px;
-    }
-
-    .socials--whatsapp {
-        background-position-x: -160px;
-    }
-
-.apps {
-    padding-left: 20px;
-    position: relative;
-} 
-
-    .apps:before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        width: 16px;
-        height: 16px;
-    }
-
-    .apps--ios:before {
-        background: url(../images/appstore-grey.png) no-repeat; 
-        background-size: cover;
-    }
-
-    .apps--android:before {
-        background: url(../images/google_play-grey.png) no-repeat;
-        background-size: cover;
-    }
-
-.header--white,
 .footer--white {
     color: #ffffff;
 }
 
-    .header--white *,
     .footer--white * {
         color: #ffffff;
-    }
-
-    .dark .whatsapp:before {
-        background: url(../images/whatsapp-white.png) center no-repeat;
-        background-size: cover;
-    }
-
-    .header--white .nav_btn,
-    .dark .nav_btn {
-        background: url(../images/hamburger-white.png) center no-repeat;
-        background-size: cover;
-    }
-
-    .header--white .nav_btn--active,
-    .dark .nav_btn--active {
-        background: url(../images/cross-white.png) center no-repeat;
-        background-size: cover;
     }
 
     .footer--white .mode-button {
         display: none;
     }
 
+    .socials {
+        background:url(../images/socials.png) no-repeat;
+        background-size: cover;
+    }
+
+        .socials--facebook {
+            background-position-x: -40px;
+        }
+
+        .socials--youtube {
+            background-position-x: -80px;
+        }
+
+        .socials--vk {
+            background-position-x: -120px;
+        }
+
+        .socials--whatsapp {
+            background-position-x: -160px;
+        }
+
     .footer--white .socials,
     .dark .socials {
         background-image: url(../images/socials-white.png);
     }
 
-    .footer--white .apps--ios:before,
-    .dark .apps--ios:before {
-        background: url(../images/appstore-white.png) no-repeat; 
-        background-size: cover;
-    }
+    .apps {
+        padding-left: 20px;
+        position: relative;
+    } 
 
-    .footer--white .apps--ios:before,
-    .dark .apps--android:before {
-        background: url(../images/google_play-white.png) no-repeat; 
-        background-size: cover;
-    }
+        .apps:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 16px;
+            height: 16px;
+        }
 
-.download_app {
-    position: relative;
-    padding-left: 32px;
-}
+        .apps--ios:before {
+            background: url(../images/appstore-grey.png) no-repeat; 
+            background-size: cover;
+        }
+
+        .apps--android:before {
+            background: url(../images/google_play-grey.png) no-repeat;
+            background-size: cover;
+        }
+
+        .footer--white .apps--ios:before,
+        .dark .apps--ios:before {
+            background: url(../images/appstore-white.png) no-repeat; 
+            background-size: cover;
+        }
     
-    .download_app:before {
-        content: "";
-        display: block;
+        .footer--white .apps--ios:before,
+        .dark .apps--android:before {
+            background: url(../images/google_play-white.png) no-repeat; 
+            background-size: cover;
+        }
+
+    /* Day/Night Mode Slider */
+    .slider {
+        border-radius: 18px;
         position: absolute;
-        width: 24px;
-        height: 24px;
-        left: 8px;
-        top: 50%;
-        margin-top: -12px;
-    }
-
-    .download_app--ios:before {
-        background: url(../images/appstore.png) no-repeat;
-        background-size: cover;
-    }
-
-    .download_app--android:before {
-        background: url(../images/google_play.png) no-repeat;
-        background-size: cover;
-    }
-
-    .dark .download_app--ios:before {
-        background: url(../images/appstore-white.png) no-repeat;
-        background-size: cover;
-    }
-
-    .dark .download_app--android:before {
-        background: url(../images/google_play-white.png) no-repeat;
-        background-size: cover;
-    }
-
-.video-link {
-    padding-left: 32px;
-}
-    
-    .video-link:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        margin-top: -12px;
-        width:  24px;
-        height: 24px;
+        cursor: pointer;
+        top: 0;
         left: 0;
-        background: url(../images/play.png) no-repeat;
-        background-size: cover;
+        right: 0;
+        bottom: 0;
+        background:url(../images/moon.png)  rgba(55, 71, 79, 0.1) no-repeat;
+        background-size: 12px 12px;
+        background-position: 6px;
+        -webkit-transition: .3s;
+        transition: .3s;
     }
 
-    .dark .video-link:before {
-        background: url(../images/play-yellow.png) no-repeat;
-        background-size: cover;
-    }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            right: 1px;
+            bottom: 1px;
+            background: url(../images/sun.png) white no-repeat;
+            background-size: 12px 12px;
+            background-position: 6px;
+            border-radius: 50%;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+
+        input:checked + .slider {
+            background:url(../images/sun-white.png)  #5d5f61 no-repeat;
+            background-size: 12px 12px;
+            background-position: 28px 6px;
+        }
+
+            input:checked + .slider:before {
+                background: url(../images/moon-white.png) #343739 no-repeat;
+                background-size: 12px 12px;
+                background-position: 5px;
+                -webkit-transform: translateX(-22px);
+                -ms-transform: translateX(-22px);
+                transform: translateX(-22px);
+            }
+
+/* -------------------------- Footer Styles  */

@@ -34,7 +34,6 @@
 
     function clickOnButton () {
         document.querySelector("#menuToggle").addEventListener("click", function() {
-            this.classList.toggle("nav_btn--active")
             toggleMenu();
         });
     }
@@ -42,7 +41,7 @@
     function clickOnLinks () {
         document.querySelectorAll("#nav a").forEach(function(el) {
             el.addEventListener("click", function () {
-                if(el.classList.contains("link")) {
+                if(el.getAttribute("data-section") !== undefined) {
                     if (el.getAttribute("data-section") !== "home" 
                     && main.classList.contains("main--fixed")) {
                         main.classList.remove("main--fixed");
@@ -61,6 +60,7 @@
     function toggleMenu () {
         document.getElementById("nav").classList.toggle("nav--openned");
         document.getElementById("main").classList.toggle("main--hidden");
+        document.getElementById("menuToggle").classList.toggle("nav_btn--active")
     }
 
     function goToSection(section) {
