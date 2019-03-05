@@ -1,6 +1,22 @@
+@media screen and (min-width: 90em) { 
+    html {
+        font: 18px/1.5 'GraphikLCG-Regular', sans-serif;
+    }
+}
+
+@media screen and (min-width: 60em) and (max-width: 90em) { 
+    html {
+        font: 14px/1.5 'GraphikLCG-Regular', sans-serif;
+    }
+}
+
 @media screen and (min-width: 60em) { 
 
     /* Heights ---------------------------------- */
+
+    .h2 {
+        height: 32px;
+    }
 
     .h60 {
         height: 60px;
@@ -17,6 +33,10 @@
     /* ---------------------------------- Heights */
 
     /* Widths ---------------------------------- */
+
+    .w2 {
+        width: 32px;
+    }
 
     .w60 {
         width: 60px;
@@ -89,7 +109,7 @@
 
     .mobile-app {
         width: 32vw;
-        max-width: 300px;
+        max-width: 25rem;
     }
 
     /* Navigation Styles ---------------------- */
@@ -221,11 +241,11 @@
                 background-size: cover;
             }
 
-        .swiper-button-next {
+        .swiper-container--mm .swiper-button-next {
             right: 8%;
         }
         
-        .swiper-button-prev {
+        .swiper-container--mm .swiper-button-prev {
             left: 8%;
         }
 

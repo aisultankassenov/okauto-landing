@@ -481,7 +481,7 @@ html {
             background-size: cover;
         }
     
-        .footer--white .apps--ios:before,
+        .footer--white .apps--android:before,
         .dark .apps--android:before {
             background: url(../images/google_play-white.png) no-repeat; 
             background-size: cover;
